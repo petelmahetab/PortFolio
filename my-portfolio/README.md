@@ -25,20 +25,6 @@ All your personal info lives in one place — open `src/Portfolio.jsx` and edit 
 const DATA = {
   name: "Mahetab Patel",
   email: "mahetabpatel33@gmail.com",
-  resumeUrl: "/resume.pdf",   // drop your PDF in /public
-  avatarUrl: "/me.jpg",       // drop your photo in /public
-
-  projects: [
-    {
-      id: "04",
-      title: "My New Project",
-      date: "Apr 2026",
-      description: "What it does...",
-      tech: ["React", "Node.js"],
-      github: "https://github.com/...",
-      live: "https://...",
-    },
-  ],
 };
 ```
 
