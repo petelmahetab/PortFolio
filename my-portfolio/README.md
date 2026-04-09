@@ -1,18 +1,79 @@
-# React + Vite
+# 🖤 Mahetab Patel — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal developer portfolio built with **React + Vite**. Dark-themed, animated, and fully editable.
 
-Currently, two official plugins are available:
+🔗 **Live:** [your-portfolio-url.vercel.app](#) &nbsp;|&nbsp; ✉️ mahetabpatel33@gmail.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ⚡ Quick Start
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+```bash
+git clone https://github.com/petelmahetab/portfolio.git
+cd portfolio
+npm install
+npm run dev
+```
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## ✏️ How to Edit
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+All your personal info lives in one place — open `src/Portfolio.jsx` and edit the `DATA` object at the top:
+
+```js
+const DATA = {
+  name: "Mahetab Patel",
+  email: "mahetabpatel33@gmail.com",
+  resumeUrl: "/resume.pdf",   // drop your PDF in /public
+  avatarUrl: "/me.jpg",       // drop your photo in /public
+
+  projects: [
+    {
+      id: "04",
+      title: "My New Project",
+      date: "Apr 2026",
+      description: "What it does...",
+      tech: ["React", "Node.js"],
+      github: "https://github.com/...",
+      live: "https://...",
+    },
+  ],
+};
+```
+
+---
+
+## 🎨 Themes
+
+| File | Accent | Font |
+|------|--------|------|
+| `Portfolio.jsx` | `#4fffb0` Mint | Syne + DM Sans |
+| `Portfolio_Theme2_Blue.jsx` | `#00d4ff` Cyan | Plus Jakarta Sans |
+| `Portfolio_Theme3_Crimson.jsx` | `#ff3d5a` Red | Outfit |
+
+To switch themes, change the import in `App.jsx`:
+```js
+import Portfolio from './Portfolio_Theme2_Blue'
+```
+
+---
+
+## 🚀 Deploy to Vercel
+
+```bash
+npm run build
+# drag the /dist folder to vercel.com — or connect your GitHub repo for auto-deploys
+```
+
+---
+
+## 🛠 Tech Stack
+
+`React 18` · `Vite` · `CSS Variables` · `IntersectionObserver` · `Google Fonts`
+
+No UI libraries. No extra dependencies.
+
+---
+
+> Built by [Mahetab Patel](https://github.com/petelmahetab)
